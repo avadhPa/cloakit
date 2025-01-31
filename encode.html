@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encode Image</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="encode-page">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <div class="encode-box">
+      <h1>Encode Image</h1>
+      <input type="file" id="image-upload" accept="image/*">
+      <textarea id="secret-text" placeholder="Enter your secret message"></textarea>
+      <button id="encode-btn">Encode</button>
+      <a id="download-link" class="hidden" download="encoded_image.png">Download Encoded Image</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="encode.js"></script>
+</body>
+</html>

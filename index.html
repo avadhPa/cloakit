@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steganography App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="landing-page">
+    <div class="welcome-box">
+      <h1>Welcome to Steganography</h1>
+      <h2 id="shuffling-text">Steganography is like writing a secret note in invisible ink, but inside a picture 🫣🫣</h2>
+      <div class="buttons">
+        <a href="encode.html" class="btn encode-btn">Encode</a>
+        <a href="decode.html" class="btn decode-btn">Decode</a>
+      </div>
+    </div>
+    <a href="https://www.linkedin.com/in/avadh-pandey-a9420a294/" class="btn about-btn" target="_blank">Find me on LinkedIn</a>
+  </div>
+
+  <script>
+    // Array of messages to shuffle
+    const messages = [
+      "Think of steganography as hiding a treasure map inside a selfie—only those in the know can find it! 😁😁",
+      "It’s like whispering a secret, but instead of words, you tuck it away inside an image or a file!👀👀 ",
+      "Steganography is the digital version of passing notes in class—hidden in plain sight! 😏🫡",
+      "Imagine hiding a secret code inside a cat Image only those with the right key can unlock it! 😊🔑",
+      "Secretly stashing data like a digital ninja, hiding messages in pictures, music, or even memes! 🥷🤞 ",
+      " it's like giving your data a magical invisibility cloak! 🔍✨"
+    ];
+
+    // Function to shuffle messages
+    function shuffleMessages() {
+      const h2 = document.getElementById("shuffling-text");
+      let currentIndex = 0;
+
+      setInterval(() => {
+        h2.textContent = messages[currentIndex];
+        currentIndex = (currentIndex + 1) % messages.length;
+      }, 6000); // Change message every 3 seconds
+    }
+
+    // Start shuffling messages
+    shuffleMessages();
+  </script>
+</body>
+</html>
